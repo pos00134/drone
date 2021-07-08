@@ -14,32 +14,32 @@ Autonomous Drone Simulation Competition
 # Install Guide
 1. Install Ros Melodic
 ```
-chmod +x ros_melodic_install.sh
-ros_melodic_install.sh
+sudo chmod +x ros_melodic_install.sh
+./ros_melodic_install.sh
 ```
   
 2. Install Unreal Engine
 Make sure you are registered with Epic Games. This is required to get source code access for Unreal Engine.     
 Link : https://docs.unrealengine.com/4.26/en-US/SharingAndReleasing/Linux/BeginnerLinuxDeveloper/SettingUpAnUnrealWorkflow/
 ```
-chmod +x Unreal_install.sh
-Unreal_install.sh
+sudo chmod +x Unreal_install.sh
+./Unreal_install.sh
 ```
 
 3. Install AirSim
 ```
-chmod +x AirSim_install.sh
-AirSim_install.sh
+sudo chmod +x AirSim_install.sh
+./AirSim_install.sh
 ```
 
 4. Install mavros
 ```
-chmod +x mavros_install.sh
-mavros_install.sh
+sudo chmod +x mavros_install.sh
+./mavros_install.sh
 ```
 
 5. Install px4
 ```
-chmod +x px4_install.sh
-px4_install.sh
+sudo chmod +x px4_install.sh
+./px4_install.sh
 ```
