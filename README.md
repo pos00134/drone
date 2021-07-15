@@ -53,8 +53,17 @@ sudo chmod +x px4_install.sh
 Setting file for drone competition. This file is used to set visual sensors and connenct simulation with px4 firmware.
 Put this file at Documents\Airsim
 
+Visual sensor specification
+front_left_custom
+RGB, 480X320, FOV : 90
+front_right_custom
+RGB, 480X320, FOV : 90
+front_center_custom
+Depth, 480X320, FOV : 90
+
 Link : https://drive.google.com/file/d/1fh2EnoJz7hbem4Dgi3Q70KtUQGRDGnZq/view?usp=sharing
 
+![전경1](https://user-images.githubusercontent.com/71123229/125734120-de1456b6-a83a-49dd-96fc-4fa7491cae9b.jpg)
 
 Download competition map. Download file and unzip. Run drone_proto.uproject file and click 'play' for start simulation
 
