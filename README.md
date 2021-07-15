@@ -12,6 +12,10 @@ Autonomous Drone Simulation Competition
 - external graphics card
 
 # Install Guide
+0. After git clone
+```
+cd Drone_Competition
+```
 1. Install Ros Melodic
 ```
 sudo chmod +x ros_melodic_install.sh
@@ -51,7 +55,6 @@ Put this file at Documents\Airsim
 
 Link : https://drive.google.com/file/d/1fh2EnoJz7hbem4Dgi3Q70KtUQGRDGnZq/view?usp=sharing
 
-![전경1](https://user-images.githubusercontent.com/71123229/125732722-d10387bb-1f1d-4f3c-a3d8-38d8d3cb49c1.jpg)
 
 Download competition map. Download file and unzip. Run drone_proto.uproject file and click 'play' for start simulation
 
