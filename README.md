@@ -80,3 +80,9 @@ Competition map
 Download competition map. Download file and unzip. Run drone_proto.uproject file and click 'play' for start simulation
 
 Link : https://drive.google.com/file/d/1Zefu_2-tbK14JzNXVEIFOp9buxfZr6iS/view?usp=sharing
+
+# Description
+[![noise](https://user-images.githubusercontent.com/71123229/125740779-4d6557b8-fab1-455e-8b05-4855421ed6f0.png)](https://youtu.be/ys-Tc5dBA5w)
+
+
+
