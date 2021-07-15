@@ -58,11 +58,11 @@ Visual sensor specification
 
 front_left_custom
 
-RGB, 480X320, FOV : 90, 1.75cm left from center
+RGB, 480X320, FOV : 90, 1.75cm from center to left
 
 front_right_custom
 
-RGB, 480X320, FOV : 90, 1.75cm right from center
+RGB, 480X320, FOV : 90, 1.75cm from center to right
 
 front_center_custom
 
