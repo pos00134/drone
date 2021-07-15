@@ -54,11 +54,17 @@ Setting file for drone competition. This file is used to set visual sensors and 
 Put this file at Documents\Airsim
 
 Visual sensor specification
+
 front_left_custom
+
 RGB, 480X320, FOV : 90
+
 front_right_custom
+
 RGB, 480X320, FOV : 90
+
 front_center_custom
+
 Depth, 480X320, FOV : 90
 
 Link : https://drive.google.com/file/d/1fh2EnoJz7hbem4Dgi3Q70KtUQGRDGnZq/view?usp=sharing
