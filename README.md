@@ -14,7 +14,7 @@ Autonomous Drone Simulation Competition
 # Install Guide
 0. After git clone
 ```
-cd Drone_Competition
+cd ~/Drone_Competition
 ```
 1. Install Ros Melodic
 ```
@@ -81,7 +81,32 @@ Download competition map. Download file and unzip. Run drone_proto.uproject file
 
 Link : https://drive.google.com/file/d/1Zefu_2-tbK14JzNXVEIFOp9buxfZr6iS/view?usp=sharing
 
-# Launch Guide
+# Launch Guider
+0.
+Open 4 terminals respectively
+
+1. Airsim
+```
+cd ~/Airsim/ros
+source devel/setup.bash
+roslaunch airsim_ros_pkgs airsim_node.launch
+```
+
+2. PX4
+```
+cd ~/PX4-Autopilort
+make px4_sitl_default none_iris
+```
+3. Mavros
+```
+roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
+roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
+```
+
+4. terminal 4
+```
+
+```
 
 # Notice
 
