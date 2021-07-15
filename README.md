@@ -12,7 +12,11 @@ Autonomous Drone Simulation Competition
 - external graphics card
 
 # Install Guide
-1. Install Ros Melodic
+0. After git clone
+```
+cd Drone_Competition
+```
+1 Install Ros Melodic
 ```
 sudo chmod +x ros_melodic_install.sh
 ./ros_melodic_install.sh
