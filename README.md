@@ -45,6 +45,7 @@ sudo chmod +x px4_install.sh
 ```
 
 6. Setting and Download map
+
 Setting file for drone competition. This file is used to set visual sensors and connenct simulation with px4 firmware.
 Put this file at Documents\Airsim
 Link : https://drive.google.com/file/d/1fh2EnoJz7hbem4Dgi3Q70KtUQGRDGnZq/view?usp=sharing
