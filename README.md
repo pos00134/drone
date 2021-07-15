@@ -56,11 +56,11 @@ Put this file at Documents\Airsim
 Visual sensor specification
 
 
-front_left_custom
+front_RGB_custom
 
 RGB, 480X320, FOV : 90
 
-front_center_custom
+front_Depth_custom
 
 Depth, 480X320, FOV : 90
 
