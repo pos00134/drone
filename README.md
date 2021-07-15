@@ -81,8 +81,18 @@ Download competition map. Download file and unzip. Run drone_proto.uproject file
 
 Link : https://drive.google.com/file/d/1Zefu_2-tbK14JzNXVEIFOp9buxfZr6iS/view?usp=sharing
 
-# Description
+# Notice
+
+## Noise is added
 [![noise](https://user-images.githubusercontent.com/71123229/125740779-4d6557b8-fab1-455e-8b05-4855421ed6f0.png)](https://youtu.be/ys-Tc5dBA5w)
+with noise
+[![no noise](https://user-images.githubusercontent.com/71123229/125741035-d5ee562e-b835-4e04-a8bb-9195faa8f45d.png)](https://youtu.be/BqFNKbOr144)
+without noise
+
+## Offboard control Example
+### C++ example
+https://docs.px4.io/master/en/ros/mavros_offboard.html
+### Python example
 
 
 
