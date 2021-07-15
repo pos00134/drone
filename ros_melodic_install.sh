@@ -16,3 +16,5 @@ sudo apt install python-rosdep
 
 sudo rosdep init
 rosdep update
+
+sudo apt-get install python-catkin-tools python-rosinstall-generator -y

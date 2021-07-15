@@ -1,5 +1,6 @@
 cd
 sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
+sudo apt-get install ros-melodic-tf2-sensor-msgs ros-melodic-tf2-geometry-msgs ros-melodic-mavros*
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 sudo bash ./install_geographiclib_datasets.sh
 
@@ -10,9 +11,7 @@ wstool init src
 echo "source ~/rise_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
-sudo apt-get install python-catkin-tools python-rosinstall-generator -y
 wstool init ~/rise_ws/src
-
 
 rosinstall_generator --rosdistro melodic mavlink | tee /tmp/mavros.rosinstall
 
