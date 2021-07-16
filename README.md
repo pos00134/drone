@@ -12,43 +12,54 @@ Autonomous Drone Simulation Competition
 - external graphics card
 
 # Install Guide
-0. After git clone
+## 0. After git clone
 ```
 cd ~/Drone_Competition
-```
-1. Install Ros Melodic
+``` 
+
+## 1. Install Ros Melodic  
+
 ```
 sudo chmod +x ros_melodic_install.sh
 ./ros_melodic_install.sh
-```
-  
-2. Install Unreal Engine
-Make sure you are registered with Epic Games. This is required to get source code access for Unreal Engine.     
-Link : https://docs.unrealengine.com/4.26/en-US/SharingAndReleasing/Linux/BeginnerLinuxDeveloper/SettingUpAnUnrealWorkflow/
+```  
+
+## 2. Install Unreal Engine  
+
+Make sure you are registered with Epic Games. This is required to get source code access for Unreal Engine.  
+
+* Just follow the **1 - Required Setup process** on [Link](https://docs.unrealengine.com/4.26/en-US/SharingAndReleasing/Linux/BeginnerLinuxDeveloper/SettingUpAnUnrealWorkflow/) to register git.  
+* Don't download Git of Unreal Engine. it is included in the code that we distribute.  
+
 ```
 sudo chmod +x Unreal_install.sh
 ./Unreal_install.sh
-```
+```  
 
-3. Install AirSim
+* you’ll see a box asking to register Unreal Engine file types. You want to select “Yes”.  
+
+## 3. Install AirSim  
+
 ```
 sudo chmod +x AirSim_install.sh
 ./AirSim_install.sh
 ```
 
-4. Install mavros
+## 4. Install mavros  
+ 
 ```
 sudo chmod +x mavros_install.sh
 ./mavros_install.sh
-```
+``` 
 
-5. Install px4
+## 5. Install px4   
+
 ```
 sudo chmod +x px4_install.sh
 ./px4_install.sh
 ```
 
-6. Setting and Download map
+## 6. Setting and Download map  
 
 Setting file for drone competition. This file is used to set visual sensors and connenct simulation with px4 firmware.
 Put this file at Documents\Airsim
@@ -77,29 +88,30 @@ Download competition map. Download file and unzip. Run drone_proto.uproject file
 
 Link : https://drive.google.com/file/d/1fpxkDV5Y78FjcNE7m562a51CycNjB8dY/view?usp=sharing
 
-# Launch Guider
-0.
+  
+# Launch Guide
+## 0.
 Open 4 terminals respectively
 
-1. Airsim
+## 1. Airsim
 ```
 cd ~/Airsim/ros
 source devel/setup.bash
 roslaunch airsim_ros_pkgs airsim_node.launch
 ```
 
-2. PX4
+## 2. PX4
 ```
 cd ~/PX4-Autopilort
 make px4_sitl_default none_iris
 ```
-3. Mavros
+## 3. Mavros
 ```
 roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 ```
 
-4. terminal 4
+## 4. terminal 4
 ```
 
 ```
