@@ -38,8 +38,7 @@ sudo chmod +x Unreal_install.sh
 
 * you’ll see a box asking to register Unreal Engine file types. You want to select “Yes”.  
 
-And you have to install Graphics Card Driver. please refer to [Link](https://docs.unrealengine.com/4.26/en-US/Basics/InstallingUnrealEngine/RecommendedSpecifications/)  
-
+And you have to install Graphics Card Driver. please refer to [Link](https://docs.unrealengine.com/4.26/en-US/Basics/InstallingUnrealEngine/RecommendedSpecifications/).  
 
 ## 3. Install AirSim  
 
