@@ -127,9 +127,9 @@ noise added
 
 noise not added
 
-## Camera Intrinsic Matrix on Airsim
+## Camera Intrinsic Parameter on Airsim
 
-<img width="271" alt="image" src="https://user-images.githubusercontent.com/69129041/126032612-16f44011-4b77-4516-84d3-6f7ee8adaeea.png">
+{ fx fy cx cy } = { 240 240 240 160 }
 
 No distortion Parameter
 
