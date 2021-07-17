@@ -69,14 +69,14 @@ Visual sensor specification
 
 front_RGB_custom
 
-RGB, 480X320, FOV : 90
+RGB, 480X320, FOV : 90, 0.5m above from the drone center
 
 front_Depth_custom
 
-Depth, 480X320, FOV : 90
+Depth, 480X320, FOV : 90, 0.5m above from the drone center
 
 
-Link : https://drive.google.com/file/d/10HfFgOXBkaS7w-cV9VT8arAf4vEFdtrW/view?usp=sharing
+Link : https://drive.google.com/file/d/1SslND29AajkYmXhOygzofjK_ZB8YOdB5/view?usp=sharing
 
 
 
@@ -102,12 +102,11 @@ roslaunch airsim_ros_pkgs airsim_node.launch
 
 ## 2. PX4
 ```
-cd ~/PX4-Autopilort
+cd ~/PX4-Autopilot
 make px4_sitl_default none_iris
 ```
 ## 3. Mavros
 ```
-roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 ```
 
@@ -138,14 +137,15 @@ https://microsoft.github.io/AirSim/airsim_ros_pkgs.html#using-airsim-ros-wrapper
 
 Given topics
 ```
-/airsim_node/drone_1/front_RGB_custom/Scene
-/airsim_node/drone_1/front_Depth_custom/Depthplanar
+/airsim_node/drone_1/front_center_custom/Scene
+/airsim_node/drone_1/front_center_custom/Depthplanar
 ```
 
 ## Offboard control Example
 ### C++ example
 https://docs.px4.io/master/en/ros/mavros_offboard.html
 ### Python example
+https://github.com/rladntjd/offboard_example_python.git
 
 
 
