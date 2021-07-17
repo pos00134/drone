@@ -127,6 +127,21 @@ noise added
 
 noise not added
 
+## Subscriber & Publisher
+http://wiki.ros.org/mavros
+
+Topics mentioned at 6.13 setpoint_accel ~6.17 setpoint_velocity is provided.
+(mavros_msgs/GlobalPositionTarget is EXCLUDED)
+
+
+https://microsoft.github.io/AirSim/airsim_ros_pkgs.html#using-airsim-ros-wrapper
+
+Given topics
+```
+/airsim_node/drone_1/front_RGB_custom/Scene
+/airsim_node/drone_1/front_Depth_custom/Depthplanar
+```
+
 ## Offboard control Example
 ### C++ example
 https://docs.px4.io/master/en/ros/mavros_offboard.html
