@@ -129,7 +129,7 @@ noise not added
 
 ## Camera Intrinsic Parameter on Airsim
 
-{ fx fy cx cy } = { 240 240 240 160 }
+{ fx, fy, cx, cy } = { 240, 240, 240, 160 }
 
 No distortion Parameter
 
