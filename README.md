@@ -131,6 +131,9 @@ Please refer to the notice below. You can see Camera Intrinsic Parameter on Airs
 # Notice
 
 ## Noise is added
+
+Gaussian random noise is added to rotor thrust.
+
 [![noise](https://user-images.githubusercontent.com/71123229/125740779-4d6557b8-fab1-455e-8b05-4855421ed6f0.png)](https://youtu.be/ys-Tc5dBA5w)
 
 noise added
@@ -147,11 +150,6 @@ No distortion Parameter
 
 
 ## Subscriber & Publisher
-http://wiki.ros.org/mavros
-
-Topics mentioned at 6.13 setpoint_accel ~6.17 setpoint_velocity is provided.
-(mavros_msgs/GlobalPositionTarget is EXCLUDED)
-
 
 https://microsoft.github.io/AirSim/airsim_ros_pkgs.html#using-airsim-ros-wrapper
 
@@ -160,6 +158,13 @@ Given topics
 /airsim_node/drone_1/front_center_custom/Scene
 /airsim_node/drone_1/front_center_custom/Depthplanar
 ```
+
+http://wiki.ros.org/mavros
+
+- Topics mentioned at 6.13 setpoint_accel ~6.17 setpoint_velocity is provided.
+
+- GPS data is NOT provided. Use visual odometry for positioning. 
+
 
 ## Offboard control Example
 ### C++ example
