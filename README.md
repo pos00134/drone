@@ -28,7 +28,7 @@ sudo chmod +x ros_melodic_install.sh
 
 Make sure you are registered with Epic Games. This is required to get source code access for Unreal Engine.  
 
-* Just follow the **1 - Required Setup process** on [Link](https://docs.unrealengine.com/4.26/en-US/SharingAndReleasing/Linux/BeginnerLinuxDeveloper/SettingUpAnUnrealWorkflow/) to register git.  
+* Just follow the "1 - Required Setup process" on [Link](https://docs.unrealengine.com/4.26/en-US/SharingAndReleasing/Linux/BeginnerLinuxDeveloper/SettingUpAnUnrealWorkflow/) to register git.  
 * Don't download Git of Unreal Engine. it is included in the code that we distribute.  
 
 ```
@@ -37,6 +37,9 @@ sudo chmod +x Unreal_install.sh
 ```  
 
 * you’ll see a box asking to register Unreal Engine file types. You want to select “Yes”.  
+
+And you have to install Graphics Card Driver. please refer to [Link](https://docs.unrealengine.com/4.26/en-US/Basics/InstallingUnrealEngine/RecommendedSpecifications/)  
+
 
 ## 3. Install AirSim  
 
@@ -91,30 +94,40 @@ Link : https://drive.google.com/file/d/1fpxkDV5Y78FjcNE7m562a51CycNjB8dY/view?us
   
 # Launch Guide  
 
-Open 4 terminals respectively
+## 1. Open Map  
+Run drone_proto.uproject file and click 'play' for start simulation.  
 
-## 1. terminal 1 : Airsim  
+
+## 2. Open 4 terminals respectively
+### 1) terminal 1 : Airsim  
 
 ```
-cd ~/Airsim/ros
+cd ~/AirSim/ros
 source devel/setup.bash
 roslaunch airsim_ros_pkgs airsim_node.launch
 ```
 
-## 2. terminal 2 : PX4
+### 2) terminal 2 : PX4
 ```
 cd ~/PX4-Autopilot
 make px4_sitl_default none_iris
 ```
-## 3. terminal 3 : Mavros
+### 3) terminal 3 : Mavros
 ```
 roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
-```
-
-## 4. terminal 4 : 
-```
+```  
+if the upper code doesn't work, try this code.  
 
 ```
+roslaunch mavros px4.launch fcu_url:="udp://:14550@127.0.0.1:14557"
+```  
+
+### 4) terminal 4 : Autonomous Driving (your code!)  
+You have to design this part. 
+```
+roslaunch {your_simulation_package_name} {your_launch_file_name}.launch
+```  
+Please refer to the notice below. You can see Camera Intrinsic Parameter on Airsim, Subscriber & Publisher and Offboard control Example.
 
 # Notice
 
