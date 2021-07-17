@@ -89,28 +89,29 @@ Download competition map. Download file and unzip. Run drone_proto.uproject file
 Link : https://drive.google.com/file/d/1fpxkDV5Y78FjcNE7m562a51CycNjB8dY/view?usp=sharing
 
   
-# Launch Guide
-## 0.
+# Launch Guide  
+
 Open 4 terminals respectively
 
-## 1. Airsim
+## 1. terminal 1 : Airsim  
+
 ```
 cd ~/Airsim/ros
 source devel/setup.bash
 roslaunch airsim_ros_pkgs airsim_node.launch
 ```
 
-## 2. PX4
+## 2. terminal 2 : PX4
 ```
 cd ~/PX4-Autopilot
 make px4_sitl_default none_iris
 ```
-## 3. Mavros
+## 3. terminal 3 : Mavros
 ```
 roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 ```
 
-## 4. terminal 4
+## 4. terminal 4 : 
 ```
 
 ```
