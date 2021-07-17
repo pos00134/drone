@@ -127,6 +127,13 @@ noise added
 
 noise not added
 
+## Camera Intrinsic Matrix on Airsim
+
+<img width="271" alt="image" src="https://user-images.githubusercontent.com/69129041/126032612-16f44011-4b77-4516-84d3-6f7ee8adaeea.png">
+
+No distortion Parameter
+
+
 ## Subscriber & Publisher
 http://wiki.ros.org/mavros
 
