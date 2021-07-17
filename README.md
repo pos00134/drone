@@ -88,7 +88,7 @@ Competition map
 
 Download competition map. Download file and unzip. Run drone_proto.uproject file and click 'play' for start simulation
 
-Link : https://drive.google.com/file/d/1BXGOqjJ4qfZmwqmLKIkuqbBlKMJ34ybG/view?usp=sharing
+Link : https://drive.google.com/file/d/1T4HFgoP6qZ9UaB2mLDsTtth69yVWlUDO/view?usp=sharing
 
 After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
   
