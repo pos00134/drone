@@ -81,15 +81,13 @@ Depth, 480X320, FOV : 90, 0.5m above from the drone center
 
 Link : https://drive.google.com/file/d/1SslND29AajkYmXhOygzofjK_ZB8YOdB5/view?usp=sharing
 
-
-
-![전경1](https://user-images.githubusercontent.com/71123229/125734120-de1456b6-a83a-49dd-96fc-4fa7491cae9b.jpg)
+![메시](https://user-images.githubusercontent.com/71123229/126067216-e9c53062-49d4-4abf-aa73-8f6194c59800.JPG)
 
 Competition map
 
 Download competition map. Download file and unzip. Run drone_proto.uproject file and click 'play' for start simulation
 
-Link : https://drive.google.com/file/d/1T4HFgoP6qZ9UaB2mLDsTtth69yVWlUDO/view?usp=sharing
+Link : https://drive.google.com/file/d/13ov3VNdTqMKSe6n3cfW02PkfWVrCSNBx/view?usp=sharing
 
 After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
   
