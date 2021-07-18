@@ -156,8 +156,7 @@ Given topics
 /simulation/depth_image
 ```
 
-Depth camera can measure distance upto 13m
-Depth noise is added 
+Depth camera can measure distance upto 13m. Depth noise is added
 
 http://wiki.ros.org/mavros
 
