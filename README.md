@@ -2,18 +2,19 @@
 Autonomous Drone Simulation Competition
 
 # PC Recommended Specifications
-- Intel Core i7-10750H 10th Generation, 5.00GHz
-- 16 GB DDR4 RAM
-- 500 GB SSD
-- NVIDIA GeForce GTX 1660 Ti
+- Intel Core i7-10750H 10th Generation, 5.00GHz or higher
+- 16 GB DDR4 RAM or higher
+- 500 GB SSD or higher
+- NVIDIA GeForce GTX 1660 Ti or higher
 
 # PC Required Specifications
 - OS : Ubuntu 18.04
 - external graphics card
 
 # Install Guide
-## 0. After git clone
+## Download
 ```
+git clone https://github.com/rladntjd/Drone_Competition.git
 cd ~/Drone_Competition
 ``` 
 
@@ -116,11 +117,6 @@ make px4_sitl_default none_iris
 ```
 roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 ```  
-if the upper code doesn't work, try this code.  
-
-```
-roslaunch mavros px4.launch fcu_url:="udp://:14550@127.0.0.1:14557"
-```  
 
 ### 4) terminal 4 : Autonomous Driving (your code!)  
 You have to design this part. 
@@ -133,11 +129,11 @@ Please refer to the notice below. You can see Camera Intrinsic Parameter on Airs
 
 ## Noise is added
 
-Gaussian random noise is added to rotor thrust.
+Due to gaussian random noise is added to rotor thrust the drone will vibrate.
 
 [![noise](https://user-images.githubusercontent.com/71123229/125740779-4d6557b8-fab1-455e-8b05-4855421ed6f0.png)](https://youtu.be/ys-Tc5dBA5w)
 
-noise added
+gaussian noise added
 
 [![no noise](https://user-images.githubusercontent.com/71123229/125741035-d5ee562e-b835-4e04-a8bb-9195faa8f45d.png)](https://youtu.be/BqFNKbOr144)
 
@@ -157,17 +153,20 @@ https://microsoft.github.io/AirSim/airsim_ros_pkgs.html#using-airsim-ros-wrapper
 Given topics
 ```
 /airsim_node/drone_1/front_center_custom/Scene
-/airsim_node/drone_1/front_center_custom/Depthplanar
+/simulation/depth_image
 ```
+
+Depth camera can measure distance upto 13m
+Depth noise is added 
 
 http://wiki.ros.org/mavros
 
 - Topics mentioned at 6.13 setpoint_accel ~6.17 setpoint_velocity is provided.
 
-- GPS data is NOT provided. Use visual odometry for positioning. 
+- Positioning data such as GPS is NOT provided. Use visual odometry or other pose estimation algorithm. 
 
 
-## Offboard control Example
+## PX4 Offboard control Example
 ### C++ example
 https://docs.px4.io/master/en/ros/mavros_offboard.html
 ### Python example
