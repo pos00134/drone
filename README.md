@@ -39,7 +39,6 @@ sudo chmod +x Unreal_install.sh
 
 * you’ll see a box asking to register Unreal Engine file types. You want to select “Yes”.  
 
-* Need to turn off 'Use Less CPU when in Background' option at Edit - Editor preferences - General - Performance
 
 ## 3. Install AirSim  
 
@@ -73,17 +72,14 @@ sudo depkg -i ros-melodic-depth-noise_2.0.0-0bionic.amd64.deb
 ```
 ## 7. Setting and Download map  
 
-Setting file for drone competition. This file is used to set visual sensors and connenct simulation with px4 firmware.
+* Setting file for drone competition. This file is used to set visual sensors and connenct simulation with px4 firmware.
 Put this file at Documents\Airsim
 
-Visual sensor specification
+* Visual sensor specification
 
-
-front_RGB_custom
+front_center_custom
 
 RGB, 480X320, FOV : 90, 0.5m above from the drone center
-
-front_Depth_custom
 
 Depth, 480X320, FOV : 90, 0.5m above from the drone center
 
@@ -96,7 +92,9 @@ Competition map
 
 Link : https://drive.google.com/file/d/13ov3VNdTqMKSe6n3cfW02PkfWVrCSNBx/view?usp=sharing
 
-Download file and unzip. After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
+* Download file and unzip. After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
+
+* Need to turn off 'Use Less CPU when in Background' option at Edit - Editor preferences - General - Performance
   
 # Start Guide  
 
