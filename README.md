@@ -72,7 +72,9 @@ sudo depkg -i ros-melodic-depth-noise_2.0.0-0bionic.amd64.deb
 ```
 ## 7. Setting and Download map  
 
-* Setting file for drone competition. This file is used to set visual sensors and connenct simulation with px4 firmware.
+* Setting file for drone competition.
+
+This file is used to set visual sensors and connenct simulation with px4 firmware.
 Put this file at Documents\Airsim
 
 * Visual sensor specification
@@ -88,7 +90,8 @@ Link : https://drive.google.com/file/d/1SslND29AajkYmXhOygzofjK_ZB8YOdB5/view?us
 
 ![메시](https://user-images.githubusercontent.com/71123229/126067216-e9c53062-49d4-4abf-aa73-8f6194c59800.JPG)
 
-Competition map
+* Competition map
+
 
 Link : https://drive.google.com/file/d/13ov3VNdTqMKSe6n3cfW02PkfWVrCSNBx/view?usp=sharing
 
