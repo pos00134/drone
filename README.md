@@ -64,6 +64,7 @@ sudo chmod +x px4_install.sh
 ## 6. Install depth_noise
 
 Just double-click ros-melodic-depth-noise_2.0.0-0bionic.amd64.deb
+
 or 
 ```
 sudo depkg -i ros-melodic-depth-noise_2.0.0-0bionic.amd64.deb
