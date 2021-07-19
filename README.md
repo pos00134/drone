@@ -168,7 +168,7 @@ Depth camera can measure distance upto 13m. Depth noise is added
 
 http://wiki.ros.org/mavros
 
-- Topics mentioned at 6.13 setpoint_accel ~6.17 setpoint_velocity is provided.
+- /mavros/home_position/home Topic will be provided for Home Positioning
 
 - Positioning data such as GPS is NOT provided. Use visual odometry or other pose estimation algorithm. 
 
