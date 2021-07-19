@@ -9,7 +9,7 @@ Autonomous Drone Simulation Competition
 
 # PC Required Specifications
 - OS : Ubuntu 18.04
-- external graphics card
+- external graphics card is necessary
 
 # Install Guide
 ## Download
@@ -38,8 +38,6 @@ sudo chmod +x Unreal_install.sh
 ```  
 
 * you’ll see a box asking to register Unreal Engine file types. You want to select “Yes”.  
-
-And you have to install Graphics Card Driver. please refer to [Link](https://docs.unrealengine.com/4.26/en-US/Basics/InstallingUnrealEngine/RecommendedSpecifications/).  
 
 ## 3. Install AirSim  
 
@@ -91,7 +89,7 @@ Link : https://drive.google.com/file/d/13ov3VNdTqMKSe6n3cfW02PkfWVrCSNBx/view?us
 
 After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
   
-# Launch Guide  
+# Start Guide  
 
 ## 1. Open Map  
 Run drone_proto.uproject file and click 'play' for start simulation.  
@@ -116,12 +114,10 @@ make px4_sitl_default none_iris
 roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 ```  
 
-### 4) terminal 4 : Autonomous Driving (your code!)  
-You have to design this part. 
+### 4) terminal 4 : Depth Noise
 ```
-roslaunch {your_simulation_package_name} {your_launch_file_name}.launch
+roslaunch depth_noise depth_simple.launch
 ```  
-Please refer to the notice below. You can see Camera Intrinsic Parameter on Airsim, Subscriber & Publisher and Offboard control Example.
 
 # Notice
 
@@ -149,8 +145,13 @@ No distortion Parameter
 https://microsoft.github.io/AirSim/airsim_ros_pkgs.html#using-airsim-ros-wrapper
 
 Given topics
+
+RGB image topic from Simulation Drone
 ```
 /airsim_node/drone_1/front_center_custom/Scene
+```
+Depth image topic from Simulation Drone
+```
 /simulation/depth_image
 ```
 
