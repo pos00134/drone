@@ -39,6 +39,8 @@ sudo chmod +x Unreal_install.sh
 
 * you’ll see a box asking to register Unreal Engine file types. You want to select “Yes”.  
 
+* Need to turn off 'Use Less CPU when in Background' option at Edit - Editor preferences - General - Performance
+
 ## 3. Install AirSim  
 
 ```
@@ -92,11 +94,9 @@ Link : https://drive.google.com/file/d/1SslND29AajkYmXhOygzofjK_ZB8YOdB5/view?us
 
 Competition map
 
-Download competition map. Download file and unzip. Run drone_proto.uproject file and click 'play' for start simulation
-
 Link : https://drive.google.com/file/d/13ov3VNdTqMKSe6n3cfW02PkfWVrCSNBx/view?usp=sharing
 
-After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
+Download file and unzip. After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
   
 # Start Guide  
 
