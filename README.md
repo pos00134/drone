@@ -60,7 +60,15 @@ sudo chmod +x px4_install.sh
 ./px4_install.sh
 ```
 
-## 6. Setting and Download map  
+
+## 6. Install depth_noise
+
+Just double-click ros-melodic-depth-noise_2.0.0-0bionic.amd64.deb
+or 
+```
+sudo depkg -i ros-melodic-depth-noise_2.0.0-0bionic.amd64.deb
+```
+## 7. Setting and Download map  
 
 Setting file for drone competition. This file is used to set visual sensors and connenct simulation with px4 firmware.
 Put this file at Documents\Airsim
