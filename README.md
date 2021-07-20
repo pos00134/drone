@@ -98,10 +98,6 @@ Link : https://drive.google.com/file/d/1c7pa6vY1B-qt-kkSYSXheJH0W_7Aott0/view?us
 
 * Need to turn off 'Use Less CPU when in Background' option at Edit - Editor preferences - General - Performance
 
-* Information about gate
-
-![gate](https://user-images.githubusercontent.com/71123229/126254669-f3f8533e-2bda-4e6e-9b36-932add7b7f69.png)
-
 # Start Guide  
 
 ## 1. Open Map  
@@ -174,7 +170,13 @@ http://wiki.ros.org/mavros
 
 - /mavros/home_position/home Topic will be provided for Home Positioning
 
-- Positioning data such as GPS is NOT provided. Use visual odometry or other pose estimation algorithm. 
+- Positioning data such as GPS is NOT provided. Use visual odometry or other pose estimation algorithm.
+
+
+## Information about gate
+
+![gate](https://user-images.githubusercontent.com/71123229/126254669-f3f8533e-2bda-4e6e-9b36-932add7b7f69.png)
+
 
 
 ## PX4 Offboard control Example
