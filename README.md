@@ -176,10 +176,10 @@ http://wiki.ros.org/mavros
 ## Information about map
 
 ### Bird's-eye view of map
-![map](https://user-images.githubusercontent.com/71123229/126273314-7f74110b-a5d9-4eab-9e14-c7f0f46e7169.png)
+![map](https://user-images.githubusercontent.com/71123229/126285818-48d1781d-0970-47db-9f9b-047d61058f9e.png)
 
 ### Information about gates
-![gate](https://user-images.githubusercontent.com/71123229/126273296-5727e07c-6f2a-4345-af75-bb5cf695aaf8.png)
+![gate](https://user-images.githubusercontent.com/71123229/126285768-7512f0b0-0a2c-44ac-aa6f-bc16918a08a4.png)
 
 ## PX4 Offboard control Example
 ### C++ example
