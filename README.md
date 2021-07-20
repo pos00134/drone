@@ -176,7 +176,7 @@ http://wiki.ros.org/mavros
 ## Information about map
 
 ### Bird's-eye view of map
-![map](https://user-images.githubusercontent.com/71123229/126285818-48d1781d-0970-47db-9f9b-047d61058f9e.png)
+![map](https://user-images.githubusercontent.com/71123229/126286328-36528943-e347-44a6-b9eb-af90eeec14c8.png)
 
 ### Information about gates
 ![gate](https://user-images.githubusercontent.com/71123229/126285768-7512f0b0-0a2c-44ac-aa6f-bc16918a08a4.png)
