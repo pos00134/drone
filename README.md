@@ -173,11 +173,11 @@ http://wiki.ros.org/mavros
 - Positioning data such as GPS is NOT provided. Use visual odometry or other pose estimation algorithm.
 
 
-## Information about gate
+## Information about map
 
-![gate](https://user-images.githubusercontent.com/71123229/126254669-f3f8533e-2bda-4e6e-9b36-932add7b7f69.png)
+![gate](https://user-images.githubusercontent.com/71123229/126273296-5727e07c-6f2a-4345-af75-bb5cf695aaf8.png)
 
-
+![map](https://user-images.githubusercontent.com/71123229/126273314-7f74110b-a5d9-4eab-9e14-c7f0f46e7169.png)
 
 ## PX4 Offboard control Example
 ### C++ example
