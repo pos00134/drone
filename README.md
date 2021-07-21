@@ -134,11 +134,11 @@ roslaunch depth_noise depth_simple.launch
 
 Due to gaussian random noise is added to rotor thrust the drone will vibrate.
 
-[![noise](https://user-images.githubusercontent.com/71123229/125740779-4d6557b8-fab1-455e-8b05-4855421ed6f0.png)](https://youtu.be/jsQHV0SH538)
+[![noise](https://user-images.githubusercontent.com/63506664/126478392-8998edbb-1760-419e-adb4-f839ad7877aa.jpg)](https://youtu.be/I2L0BVQSpJE)
 
 gaussian noise added
 
-[![no noise](https://user-images.githubusercontent.com/71123229/125741035-d5ee562e-b835-4e04-a8bb-9195faa8f45d.png)](https://youtu.be/ebIxCsg4aP4)
+[![no noise](https://user-images.githubusercontent.com/63506664/126478305-ac0b8d20-eaef-4038-8308-4df2b9a2b864.jpg)](https://youtu.be/ebIxCsg4aP4)
 
 noise not added
 
