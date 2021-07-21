@@ -9,7 +9,7 @@ Autonomous Drone Simulation Competition
 
 # PC Required Specifications
 - OS : Ubuntu 18.04
-- external graphics card
+- external graphics card is necessary
 
 # Install Guide
 ## Download
@@ -39,7 +39,6 @@ sudo chmod +x Unreal_install.sh
 
 * you’ll see a box asking to register Unreal Engine file types. You want to select “Yes”.  
 
-And you have to install Graphics Card Driver. please refer to [Link](https://docs.unrealengine.com/4.26/en-US/Basics/InstallingUnrealEngine/RecommendedSpecifications/).  
 
 ## 3. Install AirSim  
 
@@ -62,36 +61,44 @@ sudo chmod +x px4_install.sh
 ./px4_install.sh
 ```
 
-## 6. Setting and Download map  
 
-Setting file for drone competition. This file is used to set visual sensors and connenct simulation with px4 firmware.
-Put this file at Documents\Airsim
+## 6. Install depth_noise
 
-Visual sensor specification
+Just double-click ros-melodic-depth-noise_2.0.1-0bionic.amd64.deb
 
+or 
+```
+sudo depkg -i ros-melodic-depth-noise_2.0.1-0bionic.amd64.deb
+```
+## 7. Setting and Download map  
 
-front_RGB_custom
+* Setting file for drone competition.
+
+This file is used to set visual sensors and connenct simulation with px4 firmware.
+Put this file at Documents\AirSim
+
+* Visual sensor specification
+
+front_center_custom
 
 RGB, 480X320, FOV : 90, 0.5m above from the drone center
-
-front_Depth_custom
 
 Depth, 480X320, FOV : 90, 0.5m above from the drone center
 
 
-Link : https://drive.google.com/file/d/1SslND29AajkYmXhOygzofjK_ZB8YOdB5/view?usp=sharing
+Link : https://drive.google.com/file/d/1sZVNWXKT6hZw4Y8Yr5wyG0be0ZWCxjiN/view?usp=sharing
+
+* Competition map
 
 ![메시](https://user-images.githubusercontent.com/71123229/126067216-e9c53062-49d4-4abf-aa73-8f6194c59800.JPG)
 
-Competition map
+Link : https://drive.google.com/file/d/16f6-OAovlHapoBv_pD5CwhlGDS069gPu/view?usp=sharing
 
-Download competition map. Download file and unzip. Run drone_proto.uproject file and click 'play' for start simulation
+* Download file and unzip. After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
 
-Link : https://drive.google.com/file/d/13ov3VNdTqMKSe6n3cfW02PkfWVrCSNBx/view?usp=sharing
+* Need to turn off 'Use Less CPU when in Background' option at Edit - Editor preferences - General - Performance
 
-After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
-  
-# Launch Guide  
+# Start Guide  
 
 ## 1. Open Map  
 Run drone_proto.uproject file and click 'play' for start simulation.  
@@ -116,12 +123,10 @@ make px4_sitl_default none_iris
 roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 ```  
 
-### 4) terminal 4 : Autonomous Driving (your code!)  
-You have to design this part. 
+### 4) terminal 4 : Depth Noise
 ```
-roslaunch {your_simulation_package_name} {your_launch_file_name}.launch
+roslaunch depth_noise depth_simple.launch
 ```  
-Please refer to the notice below. You can see Camera Intrinsic Parameter on Airsim, Subscriber & Publisher and Offboard control Example.
 
 # Notice
 
@@ -149,8 +154,13 @@ No distortion Parameter
 https://microsoft.github.io/AirSim/airsim_ros_pkgs.html#using-airsim-ros-wrapper
 
 Given topics
+
+RGB image topic from Simulation Drone
 ```
 /airsim_node/drone_1/front_center_custom/Scene
+```
+Depth image topic from Simulation Drone
+```
 /simulation/depth_image
 ```
 
@@ -158,16 +168,24 @@ Depth camera can measure distance upto 13m. Depth noise is added
 
 http://wiki.ros.org/mavros
 
-- Topics mentioned at 6.13 setpoint_accel ~6.17 setpoint_velocity is provided.
+- /mavros/home_position/home Topic will be provided for Home Positioning
 
-- Positioning data such as GPS is NOT provided. Use visual odometry or other pose estimation algorithm. 
+- Positioning data such as GPS is NOT provided. Use visual odometry or other pose estimation algorithm.
 
+
+## Information about map
+
+### Bird's-eye view of map
+![map](https://user-images.githubusercontent.com/71123229/126286328-36528943-e347-44a6-b9eb-af90eeec14c8.png)
+
+### Information about gates
+![gate](https://user-images.githubusercontent.com/71123229/126285768-7512f0b0-0a2c-44ac-aa6f-bc16918a08a4.png)
 
 ## PX4 Offboard control Example
 ### C++ example
 https://docs.px4.io/master/en/ros/mavros_offboard.html
 ### Python example
-https://github.com/rladntjd/offboard_example_python.git
+https://github.com/rladntjd/px4_offboard_example.git
 
 
 

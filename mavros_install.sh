@@ -23,5 +23,7 @@ rosdep install --from-paths src --ignore-src -y
 
 ./src/mavros/mavros/scripts/install_geographiclib_datasets.sh
 
+source /opt/ros/melodic/setup.bash
+
 catkin build
 source ~/.bashrc
