@@ -75,7 +75,7 @@ sudo depkg -i ros-melodic-depth-noise_2.0.1-0bionic.amd64.deb
 * Setting file for drone competition.
 
 This file is used to set visual sensors and connenct simulation with px4 firmware.
-Put this file at Documents\Airsim
+Put this file at Documents\AirSim
 
 * Visual sensor specification
 
