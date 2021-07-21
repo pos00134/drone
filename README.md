@@ -129,11 +129,11 @@ Please refer to the notice below. You can see Camera Intrinsic Parameter on Airs
 
 Due to gaussian random noise is added to rotor thrust the drone will vibrate.
 
-[![noise](https://user-images.githubusercontent.com/71123229/125740779-4d6557b8-fab1-455e-8b05-4855421ed6f0.png)](https://youtu.be/ys-Tc5dBA5w)
+[![noise](https://user-images.githubusercontent.com/71123229/125740779-4d6557b8-fab1-455e-8b05-4855421ed6f0.png)](https://youtu.be/jsQHV0SH538)
 
 gaussian noise added
 
-[![no noise](https://user-images.githubusercontent.com/71123229/125741035-d5ee562e-b835-4e04-a8bb-9195faa8f45d.png)](https://youtu.be/BqFNKbOr144)
+[![no noise](https://user-images.githubusercontent.com/71123229/125741035-d5ee562e-b835-4e04-a8bb-9195faa8f45d.png)](https://youtu.be/ebIxCsg4aP4)
 
 noise not added
 
