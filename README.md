@@ -185,7 +185,7 @@ http://wiki.ros.org/mavros
 ### C++ example
 https://docs.px4.io/master/en/ros/mavros_offboard.html
 ### Python example
-https://github.com/rladntjd/offboard_example_python.git
+https://github.com/rladntjd/px4_offboard_example.git
 
 
 
