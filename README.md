@@ -92,7 +92,7 @@ Link : https://drive.google.com/file/d/1sZVNWXKT6hZw4Y8Yr5wyG0be0ZWCxjiN/view?us
 
 ![메시](https://user-images.githubusercontent.com/71123229/126067216-e9c53062-49d4-4abf-aa73-8f6194c59800.JPG)
 
-Link : https://drive.google.com/file/d/16f6-OAovlHapoBv_pD5CwhlGDS069gPu/view?usp=sharing
+Link : https://drive.google.com/file/d/1tFFiuWf6omg9fyoGqrQ-LhvkUJdkrcuH/view?usp=sharing
 
 * Download file and unzip. After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
 
