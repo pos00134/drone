@@ -86,7 +86,7 @@ RGB, 480X320, FOV : 90, 0.5m above from the drone center
 Depth, 480X320, FOV : 90, 0.5m above from the drone center
 
 
-Link : https://drive.google.com/file/d/1sZVNWXKT6hZw4Y8Yr5wyG0be0ZWCxjiN/view?usp=sharing
+Link : https://drive.google.com/file/d/1D6OVH1roItq2vfi0X-5JGv8ekbsZEBCL/view?usp=sharing
 
 * Competition map
 
