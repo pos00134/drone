@@ -94,8 +94,6 @@ Link : https://drive.google.com/file/d/1D6OVH1roItq2vfi0X-5JGv8ekbsZEBCL/view?us
 
 Link : https://drive.google.com/file/d/1Zg0f2ekQb9NoRJXgD14mmPjFXy2WCfpT/view?usp=sharing
 
-* Download file and unzip. After unzip this file, need to transfer AirSim plugin folder to unreal project plugin folder. AirSim plugin located at AirSim\Unreal\Plugins and it need to transfer to map\Plugins
-
 * Need to turn off 'Use Less CPU when in Background' option at Edit - Editor preferences - General - Performance
 
 # Start Guide  
