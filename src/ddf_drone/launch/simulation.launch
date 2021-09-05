@@ -1,0 +1,5 @@
+<launch>
+
+    <node name= "ddf_drone_node" pkg="ddf_drone" type="ddf_drone_node" output="screen" />
+
+</launch>
